@@ -1,0 +1,225 @@
+/* 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            ===
+   BookVerse — Điều Khoản / Hỗ trợ Styles
+             === */
+
+.page-terms {
+    padding: 28px 0 60px;
+}
+
+.terms-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+/*    SIDEBAR    */
+.terms-sidebar {
+    position: sticky;
+    top: 96px;
+}
+
+.sidebar-title {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 16px;
+    color: #2E1A0E;
+    margin-bottom: 14px;
+}
+
+.terms-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.terms-nav-link {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5c3d2e;
+    background: #FDFAF7;
+    border: 1px solid rgba(107, 58, 42, 0.1);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.terms-nav-link:hover {
+    background: #F5EFE8;
+    color: #2E1A0E;
+    border-color: rgba(107, 58, 42, 0.22);
+}
+
+/*    CONTENT    */
+.terms-content {
+    background: #FDFAF7;
+    border: 1px solid rgba(107, 58, 42, 0.1);
+    border-radius: 18px;
+    padding: 28px;
+}
+
+.terms-header {
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(107, 58, 42, 0.1);
+}
+
+.terms-title {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 26px;
+    color: #2E1A0E;
+    margin-bottom: 12px;
+}
+
+.terms-intro {
+    font-size: 15px;
+    color: #5c3d2e;
+    line-height: 1.7;
+}
+
+.terms-section {
+    margin-bottom: 28px;
+}
+
+.terms-section:last-of-type {
+    margin-bottom: 0;
+}
+
+.terms-section-title {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 18px;
+    color: #2E1A0E;
+    margin-bottom: 12px;
+}
+
+.terms-section p,
+.terms-section li {
+    font-size: 15px;
+    color: #3e2618;
+    line-height: 1.75;
+}
+
+.terms-section ul,
+.terms-section ol {
+    padding-left: 22px;
+    margin-top: 10px;
+}
+
+.terms-section li + li {
+    margin-top: 8px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+.info-item {
+    background: #FFFFFF;
+    border: 1px solid rgba(107, 58, 42, 0.1);
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.info-item h3 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 15px;
+    color: #2E1A0E;
+    margin-bottom: 10px;
+}
+
+.info-item ul {
+    margin-top: 0;
+}
+
+.guide-steps {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.guide-steps li {
+    background: #FFFFFF;
+    border: 1px solid rgba(107, 58, 42, 0.1);
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.guide-steps h3 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 15px;
+    color: #2E1A0E;
+    margin-bottom: 6px;
+}
+
+.terms-footer {
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(107, 58, 42, 0.1);
+    font-size: 14px;
+    color: #5c3d2e;
+    line-height: 1.7;
+}
+
+/*           ===
+   Responsive
+             === */
+@media (max-width: 992px) {
+    .terms-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .terms-sidebar {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .terms-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .terms-nav-link {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-terms {
+        padding: 18px 0 36px;
+    }
+
+    .terms-content {
+        padding: 18px;
+    }
+
+    .terms-title {
+        font-size: 22px;
+    }
+
+    .terms-nav-link {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+}

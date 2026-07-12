@@ -1,0 +1,374 @@
+/* =
+   BookVerse — Thanh Toán Styles
+   = */
+
+.page-checkout {
+    padding: 28px 0 48px;
+}
+
+.page-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    font-size: 28px;
+    color: #2E1A0E;
+    margin-bottom: 24px;
+}
+
+/* == TRỐNG == */
+.checkout-empty {
+    text-align: center;
+    padding: 64px 24px;
+    background: #FDFAF7;
+    border: 1px dashed rgba(107, 58, 42, 0.25);
+    border-radius: 20px;
+}
+
+.empty-icon {
+    font-size: 56px;
+    margin-bottom: 16px;
+}
+
+.empty-heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    font-size: 22px;
+    color: #2E1A0E;
+    margin-bottom: 10px;
+}
+
+.empty-desc {
+    font-size: 15px;
+    color: #957060;
+    max-width: 420px;
+    margin: 0 auto 24px;
+}
+
+/* == LAYOUT == */
+.checkout-layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 28px;
+    align-items: start;
+}
+
+.section-heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    font-size: 18px;
+    color: #2E1A0E;
+    margin-bottom: 16px;
+}
+
+/* == FORM == */
+.checkout-form {
+    background: #FDFAF7;
+    border: 1px solid rgba(107, 58, 42, 0.1);
+    border-radius: 18px;
+    padding: 22px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2E1A0E;
+    margin-bottom: 8px;
+}
+
+.required {
+    color: #DC2626;
+}
+
+.input-control {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgba(107, 58, 42, 0.2);
+    border-radius: 12px;
+    background: #FFFFFF;
+    font-size: 15px;
+    color: #2E1A0E;
+}
+
+.input-control:focus {
+    outline: 2px solid #6B3A2A;
+    outline-offset: 0;
+    background: #FFFFFF;
+}
+
+.input-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.field-error {
+    display: none;
+    font-size: 13px;
+    color: #DC2626;
+    margin-top: 6px;
+}
+
+.payment-fieldset {
+    border: 1px solid rgba(107, 58, 42, 0.15);
+    border-radius: 14px;
+    padding: 16px;
+    margin-top: 4px;
+}
+
+.payment-fieldset legend {
+    font-weight: 600;
+    color: #2E1A0E;
+    padding: 0 8px;
+}
+
+.payment-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(107, 58, 42, 0.08);
+    cursor: pointer;
+    font-size: 15px;
+    color: #2E1A0E;
+}
+
+.payment-options label:last-child {
+    border-bottom: none;
+}
+
+.form-actions {
+    margin-top: 20px;
+}
+
+/* == TÓM TẮT ĐƠN HÀNG == */
+.order-summary {
+    background: #FDFAF7;
+    border: 1px solid rgba(107, 58, 42, 0.12);
+    border-radius: 18px;
+    padding: 22px;
+    position: sticky;
+    top: 96px;
+}
+
+.summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.item-name {
+    font-size: 14px;
+    color: #2E1A0E;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-qty {
+    font-size: 13px;
+    color: #957060;
+}
+
+.item-total {
+    font-weight: 700;
+    color: #6B3A2A;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.summary-divider {
+    height: 1px;
+    background: rgba(107, 58, 42, 0.12);
+    margin: 16px 0;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.summary-label {
+    color: #5c3d2e;
+}
+
+.summary-value {
+    color: #2E1A0E;
+    font-weight: 600;
+}
+
+.summary-row-total {
+    margin-bottom: 0;
+}
+
+.total-amount {
+    font-size: 20px;
+    font-weight: 700;
+    color: #6B3A2A;
+}
+
+.summary-note {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #957060;
+    text-align: center;
+}
+
+/* == NÚT == */
+.btn {
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    line-height: 1.4;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-continue {
+    background: #6B3A2A;
+    color: #FFFFFF;
+    padding: 12px 24px;
+}
+
+.btn-continue:hover {
+    background: #8B4513;
+}
+
+.btn-primary {
+    background: #6B3A2A;
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background: #8B4513;
+}
+
+.btn-place-order {
+    width: 100%;
+    background: #6B3A2A;
+    color: #FFFFFF;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 14px;
+}
+
+.btn-place-order:hover {
+    background: #8B4513;
+}
+
+/* == THÀNH CÔNG == */
+.checkout-success {
+    padding: 24px 0;
+}
+
+.success-card {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #FDFAF7;
+    border: 1px solid rgba(107, 58, 42, 0.1);
+    border-radius: 20px;
+    padding: 32px;
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.success-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    font-size: 24px;
+    color: #2E1A0E;
+    margin-bottom: 10px;
+}
+
+.success-desc {
+    font-size: 15px;
+    color: #957060;
+    margin-bottom: 20px;
+}
+
+.success-meta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    text-align: left;
+    background: #FFFFFF;
+    border: 1px solid rgba(107, 58, 42, 0.1);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 22px;
+}
+
+.meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+    color: #5c3d2e;
+}
+
+.meta-row strong {
+    color: #2E1A0E;
+    font-size: 15px;
+}
+
+.success-actions {
+    display: flex;
+    justify-content: center;
+}
+
+/* =
+   Responsive
+   = */
+@media (max-width: 992px) {
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .order-summary {
+        position: static;
+        order: -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 22px;
+    }
+
+    .page-checkout {
+        padding: 18px 0 36px;
+    }
+
+    .checkout-form,
+    .order-summary {
+        padding: 18px;
+    }
+
+    .success-meta {
+        grid-template-columns: 1fr;
+    }
+}

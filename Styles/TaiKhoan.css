@@ -1,0 +1,504 @@
+/* =
+   BookVerse — Tài Khoản Cá Nhân Styles
+   = */
+
+/* === PAGE LAYOUT === */
+.page-account {
+    padding: 28px 0 48px;
+    background: #f8f6f3;
+    min-height: calc(100vh - 80px);
+}
+
+.page-account .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-account .page-title {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 28px;
+    color: #2E1A0E;
+    margin-bottom: 28px;
+}
+
+/* === MAIN LAYOUT === */
+.page-account .account-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+/* === PROFILE CARD (LEFT SIDEBAR) === */
+.page-account .account-card {
+    background: #FDFAF7;
+    border: 1px solid rgba(107, 58, 42, 0.12);
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(46, 26, 14, 0.06);
+    position: sticky;
+    top: 96px;
+}
+
+.page-account .avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.page-account .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6B3A2A 0%, #8B5A3C 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(107, 58, 42, 0.25);
+}
+
+.page-account .avatar-text {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.page-account .account-info {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.page-account .account-name {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 20px;
+    color: #2E1A0E;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.page-account .info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.page-account .info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.page-account .info-icon {
+    font-size: 16px;
+    width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.page-account .info-text {
+    font-size: 14px;
+    color: #4a3728;
+    word-break: break-word;
+}
+
+.page-account .card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* === MAIN CONTENT (RIGHT) === */
+.page-account .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* === ORDER SECTION === */
+.page-account .order-section {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(46, 26, 14, 0.06);
+}
+
+.page-account .section-heading {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 20px;
+    color: #2E1A0E;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.page-account .order-empty {
+    text-align: center;
+    padding: 48px 24px;
+    background: #faf8f5;
+    border-radius: 16px;
+}
+
+.page-account .empty-icon {
+    font-size: 56px;
+    margin-bottom: 16px;
+}
+
+.page-account .order-empty p {
+    font-size: 16px;
+    color: #6B3A2A;
+    margin-bottom: 20px;
+}
+
+.page-account .orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.page-account .order-card {
+    background: #faf8f5;
+    border: 1px solid #f0ebe5;
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.2s;
+}
+
+.page-account .order-card:hover {
+    border-color: #d4c4b5;
+    box-shadow: 0 4px 12px rgba(46, 26, 14, 0.08);
+}
+
+.page-account .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ebe4dc;
+}
+
+.page-account .order-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.page-account .order-id {
+    font-weight: 700;
+    color: #2E1A0E;
+    font-size: 16px;
+}
+
+.page-account .order-date {
+    font-size: 13px;
+    color: #957060;
+}
+
+.page-account .order-status {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.page-account .status-dangxuly {
+    background: #FEF3C7;
+    color: #92400E;
+    border: 1px solid #FCD34D;
+}
+
+.page-account .status-danggiao {
+    background: #DBEAFE;
+    color: #1E40AF;
+    border: 1px solid #93C5FD;
+}
+
+.page-account .status-dagiao {
+    background: #DCFCE7;
+    color: #166534;
+    border: 1px solid #86EFAC;
+}
+
+.page-account .status-dahuy {
+    background: #FEE2E2;
+    color: #991B1B;
+    border: 1px solid #FCA5A5;
+}
+
+.page-account .order-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.page-account .order-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.page-account .order-label {
+    font-size: 14px;
+    color: #6B3A2A;
+}
+
+.page-account .order-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1A0E;
+}
+
+.page-account .order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.page-account .order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.page-account .item-name {
+    font-size: 14px;
+    color: #4a3728;
+}
+
+.page-account .item-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2E1A0E;
+}
+
+/* === PROFILE EDIT FORM === */
+.page-account .profile-edit-form {
+    width: 100%;
+}
+
+.page-account .form-card {
+    background: #FDFAF7;
+    border: 1px solid rgba(107, 58, 42, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 18px 35px rgba(46, 26, 14, 0.08);
+    overflow: hidden;
+}
+
+.page-account .form-card-header {
+    padding: 32px 32px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(107, 58, 42, 0.08);
+    padding-bottom: 24px;
+    background: linear-gradient(to bottom, #fff 0%, #FDFAF7 100%);
+}
+
+.page-account .form-card-title {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 26px;
+    color: #2E1A0E;
+    margin: 0 0 8px 0;
+}
+
+.page-account .form-card-subtitle {
+    font-size: 15px;
+    color: #957060;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.page-account .form-card-body {
+    padding: 28px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.page-account .field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.page-account .field-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2E1A0E;
+}
+
+.page-account .field-group input,
+.page-account .field-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e8e2dc;
+    border-radius: 12px;
+    background: #FFFFFF;
+    font-size: 15px;
+    color: #2E1A0E;
+    transition: all 0.2s;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.page-account .field-group input:focus,
+.page-account .field-group textarea:focus {
+    outline: none;
+    border-color: #6B3A2A;
+    box-shadow: 0 0 0 4px rgba(107, 58, 42, 0.08);
+}
+
+.page-account .field-group input::placeholder,
+.page-account .field-group textarea::placeholder {
+    color: #b8a89a;
+}
+
+.page-account .field-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.page-account .field-message {
+    font-size: 13px;
+    color: #DC2626;
+    display: none;
+    margin-top: 4px;
+}
+
+.page-account .form-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+.page-account .btn-cancel {
+    padding: 12px 24px;
+    border: 2px solid rgba(107, 58, 42, 0.25);
+    border-radius: 12px;
+    background: transparent;
+    color: #6B3A2A;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.page-account .btn-cancel:hover {
+    background: #f5f0eb;
+    border-color: #6B3A2A;
+}
+
+.page-account .btn-save {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    background: #6B3A2A;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.page-account .btn-save:hover {
+    background: #8B4513;
+}
+
+/* === LEFT SIDEBAR BUTTONS === */
+.page-account .btn-update {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 12px;
+    background: #6B3A2A;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s;
+    font-family: inherit;
+}
+
+.page-account .btn-update:hover {
+    background: #8B4513;
+}
+
+.page-account .btn-ghost {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    border: 2px solid rgba(107, 58, 42, 0.2);
+    border-radius: 12px;
+    background: transparent;
+    color: #6B3A2A;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.page-account .btn-ghost:hover {
+    background: #f5f0eb;
+    border-color: #6B3A2A;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 992px) {
+    .page-account .account-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .page-account .account-card {
+        position: static;
+    }
+}
+
+@media (max-width: 640px) {
+    .page-account .page-title {
+        font-size: 24px;
+    }
+
+    .page-account .account-card {
+        padding: 20px;
+    }
+
+    .page-account .order-card {
+        padding: 16px;
+    }
+
+    .page-account .order-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .page-account .form-card-header {
+        padding: 24px 20px 20px;
+    }
+
+    .page-account .form-card-body {
+        padding: 20px;
+    }
+
+    .page-account .form-buttons {
+        flex-direction: column;
+    }
+
+    .page-account .form-buttons button {
+        width: 100%;
+    }
+}
